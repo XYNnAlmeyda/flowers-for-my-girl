@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Flowers for Shaneyy">
+    <title>Flowers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <main class="container">
+        <img src="shaneyy.png" alt="Decorative flower image" class="image-class responsive-image box-style">
+        
+        <div class="audio-container">
+            <audio class="background-music" controls preload="metadata" style="width: 100%; max-width: 300px;">
+                <source src="ad.mp3" type="audio/mpeg">
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+        </div>
+
+        <h1 class="responsive-text">
+            <br>
+        <small style="font-family: 'Courier New', monospace;">click me for more Flowers</small>
+        </h1>
+
+        <div class="sunflwr responsive-flower">
+            <div class="sunflwr__leaf--left"></div>
+            <div class="sunflwr__leaf--right"></div>
+            <div class="sunflwr__stem"></div>
+            <div class="sunflwr__center"></div>
+            <div class="sunflwr__pedal--1"></div>
+            <div class="sunflwr__pedal--2"></div>
+            <div class="sunflwr__pedal--3"></div>
+            <div class="sunflwr__pedal--4"></div>
+            <div class="sunflwr__pedal--5"></div>
+            <div class="sunflwr__pedal--6"></div>
+            <div class="sunflwr__pedal--7"></div>
+            <div class="sunflwr__pedal--8"></div>
+            <div class="sunflwr__pedal--9"></div>
+            <div class="sunflwr__pedal--10"></div>
+            <div class="sunflwr__pedal--11"></div>
+            <div class="sunflwr__pedal--12"></div>
+        </div>
+
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+    </main>
+
+    <svg class="svg-filters" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur" />
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+            </filter>
+        </defs>
+    </svg>
+    
+    <script src="script.js"></script>
+</body>
+</html>
